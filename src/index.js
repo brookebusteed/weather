@@ -11,8 +11,6 @@ function refreshWeather(response) {
 
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="icon"/>`;
 
-  console.log(response.data);
-
   cityElement.innerHTML = response.data.city;
   timeElement.innerHTML = formatDate(date);
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
